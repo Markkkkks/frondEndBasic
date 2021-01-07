@@ -2,16 +2,34 @@
 h1 {
     color: yellowgreen;
 }
-/*条件(嵌套)标签 选择器*/
+/*根据元素在文档中的位置确定样式*/
 p span{
     font-size: 12px;
 }
-
-.special{
-    color: red;
-}
-
-em .special{
+/*多标签选择*/
+ul , h2 {
     color: green;
 }
 
+/*类选择*/
+.special{
+    color: red;
+}
+/*id选择*/
+#testId{
+   color: red;
+}
+
+/*类加标签*/
+em.special{
+    color: green;
+}
+
+/*状态 start*/
+a:link{
+    color: pink;
+}
+a:hover{
+    color: purple;
+}
+/*状态 end*/
